@@ -1,28 +1,22 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# VISUAL STUDIO JUNK
+#==================
+*.sdf
+*.user
+*.suo
+*.opensdf
+*.sdf
+*.autosave
+*.aps
 
-# Precompiled Headers
-*.gch
-*.pch
+# FOLDERS
+#==================
+Binaries/
+Build/
+Temp/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
 
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# TEMP FILES
+#==================
+*.BASE.cpp
+*.LOCAL.cpp
+*.REMOTE.cpp

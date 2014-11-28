@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{15500eb1-0907-44fe-8aa1-5596916deb56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\DataTypes">
+      <UniqueIdentifier>{ca76d705-bd04-43a3-9cfb-8d195ee99964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Preincludes">
+      <UniqueIdentifier>{c3bc64bb-8413-4c0a-a7fb-6f311625eb17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Macros">
+      <UniqueIdentifier>{eb8e55cc-019e-4bd0-aa59-d3a14a24bd00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc\Assert">
+      <UniqueIdentifier>{2d47690a-ded0-4ee5-9967-1c92c1da8393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons">
+      <UniqueIdentifier>{84838eeb-9427-4d69-9334-ee60988b6746}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons\Introspect">
+      <UniqueIdentifier>{7154127c-a0a8-475a-ae59-e1621f55cb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Addons\NonCopyable">
+      <UniqueIdentifier>{76064ddd-8510-468a-b8af-6450bae31d34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{0e576d0e-6f0e-4f7c-bc4b-b1bbed72c4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Algorithm">
+      <UniqueIdentifier>{34713c86-90b7-4064-83f4-ac92769d8386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Console">
+      <UniqueIdentifier>{b19d6c67-7cf8-4dda-a021-8badc81841e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Constant">
+      <UniqueIdentifier>{47ba7011-d633-4fdf-b60c-47ca3c5e0e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Converters">
+      <UniqueIdentifier>{79f2b2f0-7512-422a-88e8-87179559742b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Format">
+      <UniqueIdentifier>{348612e7-efc9-441a-b3aa-b41ed50485db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Random">
+      <UniqueIdentifier>{c4174332-0f47-4cc6-818b-c30fecabc75a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Math">
+      <UniqueIdentifier>{ab540b21-a5f7-4c4c-a403-10f6ba2a592d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Memory">
+      <UniqueIdentifier>{c8f50d62-5933-421d-8ef9-94ce8c647eed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Libs\Time">
+      <UniqueIdentifier>{627c2c46-d128-4baf-9ea2-92e6c7efc78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools">
+      <UniqueIdentifier>{a575870a-d9a5-41e9-88f8-77e720ac2d2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers">
+      <UniqueIdentifier>{b4f81fae-eb0d-4bca-960c-3dd55d1cc9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers\PoolArrays">
+      <UniqueIdentifier>{93741985-fa25-4761-869f-7cb2d531374d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers\Arrays">
+      <UniqueIdentifier>{64f76abe-e1bc-4fd0-8d73-e12b71578937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers\PoolList">
+      <UniqueIdentifier>{e25a4b11-93d4-402e-813f-c1ce302e2563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers\Queue">
+      <UniqueIdentifier>{c58072d8-ab64-4a2f-bb5f-48132850a82f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\StopWatch">
+      <UniqueIdentifier>{d84c20e7-2a1d-44e8-98ef-3cc17c47c6b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\FileOpener">
+      <UniqueIdentifier>{affdc75c-d6d0-455a-9828-d546e40f2888}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Allocators">
+      <UniqueIdentifier>{e4b09e10-73f0-4736-a763-ad0ad4e74944}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="XAssert.cpp">
+      <Filter>Misc\Assert</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassInfo.cpp">
+      <Filter>Addons\Introspect</Filter>
+    </ClCompile>
+    <ClCompile Include="Member.cpp">
+      <Filter>Addons\Introspect</Filter>
+    </ClCompile>
+    <ClCompile Include="StringConvert.cpp">
+      <Filter>Libs\Converters</Filter>
+    </ClCompile>
+    <ClCompile Include="StopWatch.cpp">
+      <Filter>Tools\StopWatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>Libs\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math3D.cpp">
+      <Filter>Libs\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOpener.cpp">
+      <Filter>Tools\FileOpener</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Libs\Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Format.cpp">
+      <Filter>Libs\Format</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Libs\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Libs\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Libs\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="_WindowsConsole.cpp">
+      <Filter>Libs\Console</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="XAssert.h">
+      <Filter>Misc\Assert</Filter>
+    </ClInclude>
+    <ClInclude Include="Member.h">
+      <Filter>Addons\Introspect</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassInfo.h">
+      <Filter>Addons\Introspect</Filter>
+    </ClInclude>
+    <ClInclude Include="Introspect.h">
+      <Filter>Addons\Introspect</Filter>
+    </ClInclude>
+    <ClInclude Include="StringConvert.h">
+      <Filter>Libs\Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticCall.h">
+      <Filter>Misc\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="CallOnce.h">
+      <Filter>Misc\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugOnly.h">
+      <Filter>Misc\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="StopWatch.h">
+      <Filter>Tools\StopWatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Math3D.h">
+      <Filter>Libs\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>Libs\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOpener.h">
+      <Filter>Tools\FileOpener</Filter>
+    </ClInclude>
+    <ClInclude Include="Preforwards.h">
+      <Filter>Misc\Preincludes</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Libs\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="IgnoreMemleak.h">
+      <Filter>Misc\Macros</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Libs\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolArrayBase.h">
+      <Filter>Tools\Containers\PoolArrays</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolArray.h">
+      <Filter>Tools\Containers\PoolArrays</Filter>
+    </ClInclude>
+    <ClInclude Include="NativePoolArray.h">
+      <Filter>Tools\Containers\PoolArrays</Filter>
+    </ClInclude>
+    <ClInclude Include="StablePoolArray.h">
+      <Filter>Tools\Containers\PoolArrays</Filter>
+    </ClInclude>
+    <ClInclude Include="NonCopyable.h">
+      <Filter>Addons\NonCopyable</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolAlloc.h">
+      <Filter>Tools\Allocators</Filter>
+    </ClInclude>
+    <ClInclude Include="IdPoolArray.h">
+      <Filter>Tools\Containers\PoolArrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm.h">
+      <Filter>Libs\Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Libs\Random</Filter>
+    </ClInclude>
+    <ClInclude Include="Format.h">
+      <Filter>Libs\Format</Filter>
+    </ClInclude>
+    <ClInclude Include="DataTypes.h">
+      <Filter>Misc\DataTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Array.h">
+      <Filter>Tools\Containers\Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="PoolList.h">
+      <Filter>Tools\Containers\PoolList</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>Tools\Containers\Queue</Filter>
+    </ClInclude>
+    <ClInclude Include="StableArray.h">
+      <Filter>Tools\Containers\Arrays</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
+      <Filter>Libs\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="_WindowsConsole.h">
+      <Filter>Libs\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="Cast.h">
+      <Filter>Libs\Constant</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>Libs\Console</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
