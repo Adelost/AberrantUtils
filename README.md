@@ -15,7 +15,6 @@ Functions collected as static methods of various classes.
 * Console - Makes writing console applications more convenient. Also allows outputting various classes using standard ostream
 * Cast - Utility class to make casting more convenient and helps prevent code duplication when implementing identical const and non-const methods.
 * StringConvert - Facilitate strings conversion.
-* StringConvert - Facilitate strings conversion.
 * Format - Make formating strings easier.
 * Math - Math utility class.
 * Memory - Makes managing memory in an application more convenient.
@@ -39,7 +38,7 @@ Various classes.
 * Array - Dynamic array implementation. 
 * Queue - Array like FIFO-queue implementation. 
 * StableArray - Similar to a dynamic-array, but which do not reallocate the memory address of the stored elements when growing. However, elements are not guaranteed to be stored in adjacent memory locations.
-* PoolArray - Make sure code is only run in debug or release.
+* PoolArray - A mix between a pool allocator and a dynamic array. Elements are stored based on a index.
 * IdPoolArray - Similar to PoolArray, but elements are stored based on a id as well as index.
 * PoolList - A mix between a linked list and a pool allocator. Faster to add and remove elements than in a ordinary linked list.
 * StopWatch - High-precision time measuring class.
@@ -47,3 +46,4 @@ Various classes.
 ### ToDo
 * Impelmenting const iteratores.
 * Some way to reuse code between iteratores.
+* Better categorization.
