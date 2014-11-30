@@ -6,7 +6,7 @@
 
 namespace ae
 {
-	/** Template class that provides a dynamic array.
+	/** Dynamic array implementation.
 
 		It stores its items in adjacent memory locations and provides fast
 		index-based access. It does not allocate memory until an element is added to
@@ -106,8 +106,8 @@ namespace ae
 		int m_count;
 		int m_capacity;
 
-		#pragma region Iterator
 	public:
+		#pragma region Iterator
 		class Iterator
 		{
 		public:
@@ -133,10 +133,6 @@ namespace ae
 			T& operator*() const
 			{
 				return (*m_host)[m_index];
-			}
-			T* operator->() const
-			{
-				return &(*m_host)[m_index];
 			}
 
 		private:

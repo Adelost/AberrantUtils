@@ -4,9 +4,8 @@
 
 namespace ae
 {
-	/** High-precision time measuring class, useful when profiling code. The timer
-		starts automatically during initialization, but may also be started using
-		start(). */
+	/** High-precision time measuring class. The timer starts automatically
+		during initialization, but may also be started using start(). */
 	class StopWatch
 	{
 	public:

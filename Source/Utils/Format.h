@@ -6,8 +6,7 @@
 
 namespace ae
 {
-	/**
-		Class to make formating strings easier.
+	/** Make formating strings easier.
 
 		Example:
 		<pre>

@@ -19,9 +19,6 @@
     <Filter Include="Addons">
       <UniqueIdentifier>{84838eeb-9427-4d69-9334-ee60988b6746}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Addons\Introspect">
-      <UniqueIdentifier>{7154127c-a0a8-475a-ae59-e1621f55cb64}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Addons\NonCopyable">
       <UniqueIdentifier>{76064ddd-8510-468a-b8af-6450bae31d34}</UniqueIdentifier>
     </Filter>
@@ -55,6 +52,9 @@
     <Filter Include="Libs\Time">
       <UniqueIdentifier>{627c2c46-d128-4baf-9ea2-92e6c7efc78c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Addons\Introspection">
+      <UniqueIdentifier>{7154127c-a0a8-475a-ae59-e1621f55cb64}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Tools">
       <UniqueIdentifier>{a575870a-d9a5-41e9-88f8-77e720ac2d2b}</UniqueIdentifier>
     </Filter>
@@ -63,6 +63,9 @@
     </Filter>
     <Filter Include="Tools\Containers\PoolArrays">
       <UniqueIdentifier>{93741985-fa25-4761-869f-7cb2d531374d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tools\Containers\PoolArrays\Deprecated">
+      <UniqueIdentifier>{ad2d3dde-c965-4fd2-a0c4-8f144a800829}</UniqueIdentifier>
     </Filter>
     <Filter Include="Tools\Containers\Arrays">
       <UniqueIdentifier>{64f76abe-e1bc-4fd0-8d73-e12b71578937}</UniqueIdentifier>
@@ -88,10 +91,10 @@
       <Filter>Misc\Assert</Filter>
     </ClCompile>
     <ClCompile Include="ClassInfo.cpp">
-      <Filter>Addons\Introspect</Filter>
+      <Filter>Addons\Introspection</Filter>
     </ClCompile>
     <ClCompile Include="Member.cpp">
-      <Filter>Addons\Introspect</Filter>
+      <Filter>Addons\Introspection</Filter>
     </ClCompile>
     <ClCompile Include="StringConvert.cpp">
       <Filter>Libs\Converters</Filter>
@@ -100,9 +103,6 @@
       <Filter>Tools\StopWatch</Filter>
     </ClCompile>
     <ClCompile Include="Math.cpp">
-      <Filter>Libs\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="Math3D.cpp">
       <Filter>Libs\Math</Filter>
     </ClCompile>
     <ClCompile Include="FileOpener.cpp">
@@ -132,13 +132,10 @@
       <Filter>Misc\Assert</Filter>
     </ClInclude>
     <ClInclude Include="Member.h">
-      <Filter>Addons\Introspect</Filter>
+      <Filter>Addons\Introspection</Filter>
     </ClInclude>
     <ClInclude Include="ClassInfo.h">
-      <Filter>Addons\Introspect</Filter>
-    </ClInclude>
-    <ClInclude Include="Introspect.h">
-      <Filter>Addons\Introspect</Filter>
+      <Filter>Addons\Introspection</Filter>
     </ClInclude>
     <ClInclude Include="StringConvert.h">
       <Filter>Libs\Converters</Filter>
@@ -154,9 +151,6 @@
     </ClInclude>
     <ClInclude Include="StopWatch.h">
       <Filter>Tools\StopWatch</Filter>
-    </ClInclude>
-    <ClInclude Include="Math3D.h">
-      <Filter>Libs\Math</Filter>
     </ClInclude>
     <ClInclude Include="Math.h">
       <Filter>Libs\Math</Filter>
@@ -180,9 +174,6 @@
       <Filter>Tools\Containers\PoolArrays</Filter>
     </ClInclude>
     <ClInclude Include="PoolArray.h">
-      <Filter>Tools\Containers\PoolArrays</Filter>
-    </ClInclude>
-    <ClInclude Include="NativePoolArray.h">
       <Filter>Tools\Containers\PoolArrays</Filter>
     </ClInclude>
     <ClInclude Include="StablePoolArray.h">
@@ -232,6 +223,12 @@
     </ClInclude>
     <ClInclude Include="Output.h">
       <Filter>Libs\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="NativePoolArray.h">
+      <Filter>Tools\Containers\PoolArrays\Deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="Inspectable.h">
+      <Filter>Addons\Introspection</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

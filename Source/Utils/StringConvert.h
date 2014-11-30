@@ -5,7 +5,7 @@
 
 namespace ae
 {
-	/** Utility class to facilitate strings conversion. Does not support any robust
+	/** Facilitate strings conversion. Does not support any robust
 		error handling. */
 	class StringConvert
 	{

@@ -2,7 +2,7 @@
 
 namespace ae
 {
-	/** Utility class to make managing memory in an application more convenient. */
+	/** Makes managing memory in an application more convenient. */
 	class Memory
 	{
 	public:

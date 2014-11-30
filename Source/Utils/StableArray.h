@@ -4,7 +4,7 @@
 
 namespace ae
 {
-	/** A container similar to a dynamic-array, but which do not reallocate the
+	/** Similar to a dynamic-array, but which do not reallocate the
 		memory address of the stored elements when growing. It provides a fast
 		index-based access. However, elements are allocated in segments and are not
 		guaranteed to be stored in adjacent memory locations.
@@ -110,10 +110,6 @@ namespace ae
 			T& operator*() const
 			{
 				return (*m_host)[m_index];
-			}
-			T* operator->() const
-			{
-				return &(*m_host)[m_index];
 			}
 
 		private:

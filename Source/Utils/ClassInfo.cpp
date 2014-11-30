@@ -72,17 +72,15 @@ namespace ae
 		return m_index < other.m_index;
 	}
 
-	Member& ClassInfo::Iterator::operator*() const
-	{
-		return m_host->m_array[m_index];
-	}
-	Member* ClassInfo::Iterator::operator->() const
+	Member* ClassInfo::Iterator::operator*() const
 	{
 		return &m_host->m_array[m_index];
 	}
+
 	const ClassInfo::Iterator& ClassInfo::Iterator::operator++()
 	{
 		m_index++;
+
 		return *this;
 	}
 }

@@ -68,8 +68,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)../Binaries/$(Configuration)/$(Platform)/</OutDir>
-    <IntDir>$(SolutionDir)../Temp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../Binaries/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)../Temp/$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
     <IncludePath>../;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -79,13 +79,13 @@
     <IncludePath>../;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)../Binaries/$(Configuration)/$(Platform)/</OutDir>
-    <IntDir>$(SolutionDir)../Temp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../Binaries/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)../Temp/$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)../Binaries/$(Configuration)/$(Platform)/</OutDir>
-    <IntDir>$(SolutionDir)../Temp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../Binaries/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)../Temp/$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
     <TargetName>$(ProjectName)</TargetName>
     <IncludePath>../;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
@@ -95,8 +95,8 @@
     <IncludePath>../;$(IncludePath)</IncludePath>
     <LibraryPath>$(LibraryPath)</LibraryPath>
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)../Binaries/$(Configuration)/$(Platform)/</OutDir>
-    <IntDir>$(SolutionDir)../Temp/$(Configuration)/$(Platform)/$(ProjectName)/</IntDir>
+    <OutDir>$(SolutionDir)../Binaries/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>$(SolutionDir)../Temp/$(Platform)/$(Configuration)/$(ProjectName)/</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -166,7 +166,6 @@
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="FileOpener.cpp" />
     <ClCompile Include="Math.cpp" />
-    <ClCompile Include="Math3D.cpp" />
     <ClCompile Include="Member.cpp" />
     <ClCompile Include="Memory.cpp" />
     <ClCompile Include="Random.cpp" />
@@ -200,9 +199,8 @@
     <ClInclude Include="Memory.h" />
     <ClInclude Include="PoolArrayBase.h" />
     <ClInclude Include="Preforwards.h" />
-    <ClInclude Include="Introspect.h" />
+    <ClInclude Include="Inspectable.h" />
     <ClInclude Include="Math.h" />
-    <ClInclude Include="Math3D.h" />
     <ClInclude Include="Member.h" />
     <ClInclude Include="NativePoolArray.h" />
     <ClInclude Include="PoolList.h" />
@@ -213,13 +211,6 @@
     <ClInclude Include="StringConvert.h" />
     <ClInclude Include="Time.h" />
     <ClInclude Include="XAssert.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

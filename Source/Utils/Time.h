@@ -2,7 +2,7 @@
 
 namespace ae
 {
-	/** Utility class to make various things easier. */
+	/** Utility class for managing time. */
 	class Time
 	{
 	public:

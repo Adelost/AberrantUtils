@@ -5,8 +5,12 @@
 
 namespace ae
 {
-	/** Template class to allow fast allocation of objects. Objects should be
-		instantiated with the class similarly to using a smart pointer. */
+	/** Allow fast allocation of objects. This is usually much
+		faster than standard allocation using "new" and "delete".
+	
+		Objects should be instantiated with the class similarly to using a smart
+		pointer. Instantiated objects should also be deleted afterwards using
+		the "release()" method. */
 	template<class T>
 	class PoolAlloc
 	{
@@ -34,14 +38,14 @@ namespace ae
 			return s_pool[m_index];
 		}
 
-		T* operator->()
-		{
-			return &get();
-		}
-
 		T& operator*()
 		{
 			return get();
+		}
+
+		T* operator->()
+		{
+			return &get();
 		}
 
 		/** Preallocate memory for "size" number of elements to make allocation
@@ -52,7 +56,7 @@ namespace ae
 		}
 
 	private:
-		class Allocator : public StablePoolArray < T >
+		class Allocator : public StablePoolArray<T>
 		{
 		public:
 			~Allocator()

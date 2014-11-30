@@ -6,7 +6,8 @@
 
 namespace ae
 {
-	/** Pool allocator */
+	/** A mix between a linked list and a pool allocator. Faster to add and
+		remove elements than in a ordinary linked list. */
 	template<class T>
 	class PoolList
 	{

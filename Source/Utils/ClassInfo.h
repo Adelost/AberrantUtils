@@ -12,16 +12,17 @@ namespace ae
 	{
 	public:
 		ClassInfo();
-		void _init(std::string name);
-		void _add(Member::Type type, void* member, std::string name);
-		bool _hasInit();
-		void _setTarget(void* target);
 
 		/** Returns name of the class. */
 		std::string name();
 		/** Returns member, or "nullptr" if member does not exist. */
 		Member* member(char* name);
 
+		void _init(std::string name);
+		void _add(Member::Type type, void* member, std::string name);
+		bool _hasInit();
+		void _setTarget(void* target);
+	
 	private:
 		bool m_init;
 		void* m_target;
@@ -29,16 +30,15 @@ namespace ae
 		Array<Member> m_array;
 		std::map<std::string, Member> m_map;
 
-		#pragma region Iterator
 	public:
+		#pragma region Iterator
 		class Iterator
 		{
 		public:
 			Iterator(ClassInfo* host, int index);
 			void reset();
 			bool operator!=(const Iterator& other) const;
-			Member& operator*() const;
-			Member* operator->() const;
+			Member* operator*() const;
 			const Iterator& operator++();
 
 		private:

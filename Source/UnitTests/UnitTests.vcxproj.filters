@@ -7,10 +7,16 @@
     <Filter Include="Tests">
       <UniqueIdentifier>{1a82b155-0fca-4ddb-9f20-f81f5b5588f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Catch">
+      <UniqueIdentifier>{58933cee-5094-4035-93de-1947144fbb28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Tests.h">
+    <ClInclude Include="TestUtils.h">
       <Filter>Tests</Filter>
+    </ClInclude>
+    <ClInclude Include="Catch.h">
+      <Filter>Catch</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -2,20 +2,21 @@
 
 namespace ae
 {
-	/** Utility class to make casting more convenient.
-
-		Const casting is generally to be avoided, as it destroys the intent of const
-		correctness. However, one useful trick to avoid code duplication when
-		creating an identical const and a non-const get method, is to call the const
-		method from the non-const method.
-
+	/** Utility class to make casting more convenient and helps prevent code
+		duplication when implementing identical const and non-const methods.
+		
+		Const casting is generally to be avoided, as it destroys the intent of
+		const correctness. However, one useful trick to avoid code duplication
+		when creating an identical const and a non-const get method, is to call
+		the const method from the non-const method.
+		
 		Example:
 		<pre>
 		Cast::removeConst(Cast::makeConst(this).someMethod());
 		</pre>
-
-		See "Avoid Duplication in const and Non-const Member Function" in "Effective
-		C++" 3rd edition by Scott Meyers, for more information. */
+		
+		See "Avoid Duplication in const and Non-const Member Function" in
+		"Effective C++" 3rd edition by Scott Meyers, for more information. */
 	class Cast
 	{
 	public:

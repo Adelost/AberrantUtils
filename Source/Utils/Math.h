@@ -29,12 +29,12 @@ namespace ae
 		static int roundDown(float x);
 		/** Returns the value of a decimal rounded up. */
 		static int roundUp(float x);
-		/** Returns the fractional part of a float */
+		/** Returns the fractional part of a float. */
 		static float fractionalPart(float x);
 		/** Clamp the value of a float between min and max. */
 		static float clamp(float min, float max, float x);
 		/** Linear interpolation from between two float. Specified amount should
-			be a value between 0.0 and 1.0 */
+			be a value between 0.0 and 1.0. */
 		static float lerp(float from, float to, float amount);
 
 		/** Converts radians to degrees. */

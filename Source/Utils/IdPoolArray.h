@@ -4,6 +4,7 @@
 
 namespace ae
 {
+	/** Similar to PoolArray, but elements are stored based on a id as well as index. */
 	template<class T>
 	class IdPoolArray
 	{
@@ -112,7 +113,7 @@ namespace ae
 		}
 
 	private:
-		bool isEnabled(int index) const
+		bool _isEnabled(int index) const
 		{
 			return m_enabled[index];
 		}
@@ -132,7 +133,7 @@ namespace ae
 			{
 				m_target = target;
 				m_index = index;
-				findNextElement();
+				_findNextElement();
 			}
 			void reset()
 			{
@@ -142,26 +143,22 @@ namespace ae
 			{
 				return m_index < other.m_index;
 			}
-			T* operator*()
-			{
-				return (*m_target).valueFromIndex(m_index);
-			}
-			const T* operator*() const
+			T* operator*() const
 			{
 				return (*m_target).valueFromIndex(m_index);
 			}
 			const Iterator& operator++()
 			{
 				m_index++;
-				findNextElement();
+				_findNextElement();
 
 				return *this;
 			}
 
 		private:
-			void findNextElement()
+			void _findNextElement()
 			{
-				while (m_index < m_target->count() && !m_target->isEnabled(m_index))
+				while (m_index < m_target->count() && !m_target->_isEnabled(m_index))
 					m_index++;
 			}
 

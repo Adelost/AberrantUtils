@@ -3,7 +3,7 @@
 #include <ostream>
 
 /*
-	Contains operator-overloads to allow outputting various classes using standard ostream.
+	A Allow outputting various classes using standard ostream.
 */
 
 #include <vector>

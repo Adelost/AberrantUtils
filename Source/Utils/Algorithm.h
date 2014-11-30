@@ -7,7 +7,7 @@
 
 namespace ae
 {
-	/** Utility class to facilitate algorithms, such as sorting. */
+	/** Facilitates algorithms, such as sorting. */
 	class Algorithm
 	{
 	public:

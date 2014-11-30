@@ -47,7 +47,7 @@ namespace ae
 
 		void print()
 		{
-			findFirstGap();
+			_findFirstGap();
 
 			for (int i = 0; i < m_elements.count(); i++)
 			{
@@ -76,13 +76,13 @@ namespace ae
 
 			// If index was next to last gap a new gap is needed
 			if (index == m_lastGap - 1)
-				findLastGap();
+				_findLastGap();
 		}
 
 		int nextIndex()
 		{
 			// Find next gap
-			findFirstGap();
+			_findFirstGap();
 
 			return m_firstGap;
 		}
@@ -151,13 +151,13 @@ namespace ae
 
 
 	private:
-		void findFirstGap()
+		void _findFirstGap()
 		{
 			// Step forward until a new gap is found or until end is reached
 			while (m_firstGap < m_lastGap && !isGap(m_firstGap))
 				m_firstGap++;
 		}
-		void findLastGap()
+		void _findLastGap()
 		{
 			// Step forward until a new gap is found or until beginning is reached
 			while (m_lastGap > 0 && isGap(m_lastGap - 1))
@@ -189,11 +189,7 @@ namespace ae
 			{
 				return m_index < other.m_index;
 			}
-			T& operator*()
-			{
-				return m_target->m_elements[m_index];
-			}
-			const T& operator*() const
+			T& operator*() const
 			{
 				return m_target->m_elements[m_index];
 			}

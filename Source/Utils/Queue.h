@@ -2,7 +2,7 @@
 
 namespace ae
 {
-	/** Custom queue implementation. */
+	/** Array like queue implementation. */
 	template<class T>
 	class Queue
 	{

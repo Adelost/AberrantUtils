@@ -7,9 +7,7 @@
 
 namespace ae
 {
-	/** Utility class to make writing console applications more convenient. It
-		also facilitates printing common container classes directly to the
-		console. */
+	/** Makes writing console applications more convenient. */
 	class Console
 	{
 	public:
