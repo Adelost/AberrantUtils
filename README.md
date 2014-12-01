@@ -44,6 +44,6 @@ Various classes.
 * StopWatch - High-precision time measuring class.
 
 ### ToDo
-* Impelmenting const iteratores.
+* Implementing const iteratores.
 * Some way to reuse code between iteratores.
 * Better categorization.
