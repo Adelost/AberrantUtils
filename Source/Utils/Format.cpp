@@ -14,7 +14,7 @@ namespace ae
 			std::string s = str;
 
 			bool found = false;
-			*minNum = Math::INT32_MAX;
+			*minNum = Math::INTEGER_32_MAX;
 
 			std::smatch sm;
 			std::regex e(numberPrefix + "(\\d+)");
