@@ -1,9 +1,7 @@
 # Utils
-A collection of classes and utilities useful in general programming. Syntax mostly inspired by Qt, Python, Java and C#.
+A collection of classes and utilities useful in general programming.
 
-Any suggestions are welcome.
-
-### Content
+## Content
 Overview of content.
 * **Addons** - Features which may be added to a class, usually through inheritance.
     * Inspectable - Allows introspection of subclasses. Only supports introspection of member variables currently.
@@ -36,13 +34,57 @@ Overview of content.
     * PoolList - A mix between a linked list and a pool allocator. Faster to add and remove elements than in a ordinary linked list.
     * StopWatch - High-precision time measuring class.
 
-### ToDo
-Things I ponder...
-* Implementing const iteratores.
-* Some way to reuse code between iteratores.
-* Better categorization.
-* Hard to decide if forcing people to use static methods instead of functions within namespaces is the right thing to do.
-* How to add introspection of methods (perhaps using lambda functions?).
+## Introspection example
 
-### License
-Licensed under CC BY 4.0. In short, do what you want (within reasonable limits) as long as you give credits, include copyright and state any significat changes. See LICENCE.md if unsure.
+```cpp
+#include <Utils/Inspectable.h>
+
+class MyInspectableClass : Inspectable {
+public:
+  INSPECTABLE(
+    "MyInspectableClass",
+    FIELD(Field::Int, m_int, "MyInt")
+    FIELD(Field::Bool, m_bool, "MyBool")
+    FIELD_AUTONAMED(Field::Float, m_float)
+  );
+
+  MyInspectableClass() {
+    m_int = 42;
+    m_bool = true;
+    m_float = 3.14f;
+  }
+
+private:
+  int m_int;
+  bool m_bool;
+  float m_float;
+};
+
+TEST_CASE("introspection") {
+  MyInspectableClass i;
+
+  REQUIRE(i.inspect().name() == "MyInspectableClass");
+  REQUIRE(i.inspect().field("MyBool")->valueAsString() == "true");
+  REQUIRE(i.inspect().field("m_float")->valueAsString() == "3.14");
+
+  Field* m = i.inspect().field("MyInt");
+
+  REQUIRE(m->valueAsString() == "42");
+  REQUIRE(m->typeName() == "Int");
+  REQUIRE(m->type() == Field::Int);
+  REQUIRE(m->value<int>() == 42);
+
+  std::string values;
+  for (Field* m : i.inspect()) {
+    values += m->valueAsString() + " ";
+  }
+
+  REQUIRE(values == "42 true 3.14 ");
+}
+````
+
+## ToDo
+* Implementing const iteratores.
+* Reuse code between iteratores.
+* Better categorization.
+* Introspection of methods using lambda functions.
