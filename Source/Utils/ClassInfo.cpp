@@ -13,10 +13,10 @@ namespace ae
 		m_init = true;
 	}
 
-	void ClassInfo::_add(Member::Type type, void* member, std::string name)
+	void ClassInfo::_add(Field::Type type, void* field, std::string name)
 	{
-		int offset = (int)member - (int)m_target;
-		Member d(&m_target, offset, type, name);
+		int offset = (int)field - (int)m_target;
+		Field d(&m_target, offset, type, name);
 
 		m_array.add(d);
 		m_map[name] = d;
@@ -37,12 +37,12 @@ namespace ae
 		m_target = target;
 	}
 
-	Member* ClassInfo::member(char* name)
+	Field* ClassInfo::field(char* name)
 	{
 		auto it = m_map.find(name);
 		if (it == m_map.end())
 			return nullptr;
-		Member* m = &it->second;
+		Field* m = &it->second;
 		return m;
 	}
 
@@ -72,7 +72,7 @@ namespace ae
 		return m_index < other.m_index;
 	}
 
-	Member* ClassInfo::Iterator::operator*() const
+	Field* ClassInfo::Iterator::operator*() const
 	{
 		return &m_host->m_array[m_index];
 	}
