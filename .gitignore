@@ -7,6 +7,8 @@
 *.sdf
 *.autosave
 *.aps
+*.VC.*
+.vs
 
 # FOLDERS
 #==================
