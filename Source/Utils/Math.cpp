@@ -8,7 +8,7 @@ namespace ae
 {
 	const float Math::PI = 3.141592741f;
 	const float Math::TWO_PI = PI * 2.0f;
-	const int Math::INT32_MAX = INT_MAX;
+	const int Math::INTEGER_32_MAX = INT_MAX;
 	const float Math::FLOAT_MAX = FLT_MAX;
 	const double Math::DOUBLE_MAX = DBL_MAX;
 

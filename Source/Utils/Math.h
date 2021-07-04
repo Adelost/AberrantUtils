@@ -8,7 +8,7 @@ namespace ae
 	public:
 		static const float PI;
 		static const float TWO_PI;
-		static const int INT32_MAX;
+		static const int INTEGER_32_MAX;
 		static const float FLOAT_MAX;
 		static const double DOUBLE_MAX;
 
