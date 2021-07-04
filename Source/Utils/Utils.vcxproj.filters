@@ -93,7 +93,7 @@
     <ClCompile Include="ClassInfo.cpp">
       <Filter>Addons\Introspection</Filter>
     </ClCompile>
-    <ClCompile Include="Member.cpp">
+    <ClCompile Include="Field.cpp">
       <Filter>Addons\Introspection</Filter>
     </ClCompile>
     <ClCompile Include="StringConvert.cpp">
@@ -131,7 +131,7 @@
     <ClInclude Include="XAssert.h">
       <Filter>Misc\Assert</Filter>
     </ClInclude>
-    <ClInclude Include="Member.h">
+    <ClInclude Include="Field.h">
       <Filter>Addons\Introspection</Filter>
     </ClInclude>
     <ClInclude Include="ClassInfo.h">
