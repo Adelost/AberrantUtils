@@ -15,16 +15,16 @@ ae::ClassInfo& inspect() \
 	return info; \
 }
 
-#define MEMBER(TYPE, VAR, NAME) \
+#define FIELD(TYPE, VAR, NAME) \
 	info._add(TYPE, &VAR, NAME);
 
-#define MEMBER_AUTONAMED(TYPE, VAR) \
+#define FIELD_AUTONAMED(TYPE, VAR) \
 	info._add(TYPE, &VAR, #VAR);
 
 namespace ae
 {
 	/** Allows introspection of subclasses. Only supports introspection of
-		member variables currently. */
+		field variables currently. */
 	class Inspectable
 	{
 	public:

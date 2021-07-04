@@ -4,7 +4,7 @@
 
 namespace ae
 {
-	class Member
+	class Field
 	{
 	public:
 		enum Type
@@ -17,8 +17,8 @@ namespace ae
 			TypeCount
 		};
 
-		Member();
-		Member(void** start, int offset, Member::Type type, std::string name);
+		Field();
+		Field(void** start, int offset, Field::Type type, std::string name);
 
 		template<class T> T& value();
 		std::string valueAsString();
@@ -36,7 +36,7 @@ namespace ae
 	};
 
 	template<class T>
-	T& Member::value()
+	T& Field::value()
 	{
 		T& value = *(T*)((int)(*m_start) + m_offset);
 		return value;

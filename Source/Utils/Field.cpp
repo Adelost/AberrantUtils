@@ -1,10 +1,10 @@
-#include "Member.h"
+#include "Field.h"
 
 #include "StringConvert.h"
 
 namespace ae
 {
-	char* Member::stringFromType[TypeCount] =
+	char* Field::stringFromType[TypeCount] =
 	{
 		"Int",
 		"Bool",
@@ -12,12 +12,12 @@ namespace ae
 		"String",
 	};
 
-	Member::Member()
+	Field::Field()
 	{
 
 	}
 
-	Member::Member(void** start, int offset, Type type, std::string name)
+	Field::Field(void** start, int offset, Type type, std::string name)
 	{
 		m_start = start;
 		m_offset = offset;
@@ -25,28 +25,28 @@ namespace ae
 		m_name = name;
 	}
 
-	std::string Member::name()
+	std::string Field::name()
 	{
 		return m_name;
 	}
 
-	Member::Type Member::type()
+	Field::Type Field::type()
 	{
 		return m_type;
 	}
 
-	std::string Member::typeName()
+	std::string Field::typeName()
 	{
 		return std::string(stringFromType[(int)m_type]);
 	}
 
-	std::string Member::valueAsString()
+	std::string Field::valueAsString()
 	{
-		if (type() == Member::Int)
+		if (type() == Field::Int)
 			return StringConvert::toString(value<int>());
-		if (type() == Member::Float)
+		if (type() == Field::Float)
 			return StringConvert::toString(value<float>());
-		if (type() == Member::Bool)
+		if (type() == Field::Bool)
 			return StringConvert::toString(value<bool>());
 
 		return "Unkown";
